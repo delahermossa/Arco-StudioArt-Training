@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Arco-Studio</title>
+    <!-- Cogemos la fuente Raleway de google fonts para nuestro css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="textos-header">
+            <h1>Cursos Arco-Studio</h1>
+            <h2>Textured Art</h2>
+            <p>Formamos a los mejores artistas</p>
+            <a href="#contacto">Contacta</a> 
+        </div>
+        <!-- Recurso online SVG wave generator -->
+        <div class="svg-header" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-0.00,49.99 C149.89,149.99 352.68,-49.99 499.65,49.99 L499.65,149.99 L-0.00,149.99 Z"
+                    style="stroke: none; fill: rgb(255, 255, 255);"></path>
+            </svg></div>
+    </header>
+    <!-- Contenedor donde se encuentra el recurso de la ola y añadimos texto e imagen -->
+    <section class="ola-contenedor website">
+        <img src="img/artista.webp" alt="">
+        <div class="contenedor-textos-main">
+            <h2 class="titulo left">Formación a medida</h2>
+            <p class="parrafo">
+                Bienvenido a Arco-Studio, te presentamos nuestras distintas modalidades de formación en texturas, si estas buscando 
+                rodearte de inspiración y grandes profesionales, además de mejorar tu técnica, no dudes en contactar con nosotros.
+                Disponemos de la fórmula perfecta para hacerte crecer en el ámbito profesional y te proporcionamos las herramientas
+                necesarias para ello. <br>
+                ¡Descubre un poco más sobre nosotros!
+            </p>
+            <a href="https://arco-studioart.es/about/" class="cta">About us</a>
+
+        </div>
+    </section>
+    <!-- Contenedor info 1 -->
+
+    <section class="info">
+        <div class="contenedor">
+            <h2 class="titulo left">Formación del arte de las texturas</h2>
+            <p>Descubre nuestros cursos y crea una colección con nuestra formación de 3 meses, clases personalizadas y
+                curso presencial</p>
+        </div>
+    </section>
+<!-- Contenedor tarjetas de precios y cursos-- Ventanas modales  -->
+    <section class="tarjetas contenedor">
+        <h2 class="titulo">Modalidades de curso</h2>
+        <div class="contenedor-tarjetas">
+            <article class="tarjeta">
+                <img src="img/grupal.webp" alt="">
+                <h3>Grupal</h3>
+                <p>Cursos grupales de 10 alumnos</p>
+                <a id="boton1" onclick="cambiaTextoModal('100','grupal')" href="#miModal" class="cta">Precio</a>
+                
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/privado.webp" alt="">
+                <h3>Privado</h3>
+                <p>Curso privado y adaptado al alumno</p>
+                <a id="boton2" onclick="cambiaTextoModal('200','privado')"href="#miModal" class="cta">Precio</a>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/paleta.webp" alt="">
+                <h3>Avanzado</h3>
+                <p>Cursos avanzados de 10 alumnos</p>
+                <a id="boton3" onclick="cambiaTextoModal('250','avanzado')" href="#miModal" class="cta">Precio</a>
+            </article>
+        </div>
+    </section>
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+          
+            <h2 id="precioModal">Precio 100€</h2>
+            <h3 id="tipoModal">Modalidad presencial</h3>
+            <a href="#cierrate">Pulsa para cerrar</a>
+       
+        </div>  
+    </div>
+    
+<!-- Galería de proyectos realizados -->
+    <section class="galeria">
+    <div class="contenedor">
+        <h2 class="titulo">Nuestros trabajos</h2>
+        <article class="galeria-contenedor">
+            <img src="img/imagen1.webp" alt="">
+            <img src="img/imagen2.webp" alt="">
+            <img src="img/imagen3.webp" alt="">
+        </article>
+    </div>
+    </section>
+<!-- Contenedor ultima sección de la página cursos privados -->
+    <section class="info-last">
+        <div class="contenedor last-section">
+           <div class="contenedor-textos-main">
+            <h2 class="titulo left">Cursos para grupos privados</h2>
+            <p class="parrafo">También disponemos de cursos para grupos privados, disfruta de una experiencia de arte con tus amigos</p>
+            <a href="#contacto" class="cta">Pide presupuesto</a>
+        </div> 
+            <img src="img/amigos.webp" alt="">
+        </div>
+        <!-- Recurso online svg wave generator (de https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections) -->
+        <div class="svg-ola" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M-0.00,49.99 C149.89,149.99 352.68,-49.99 499.65,49.99 L499.65,149.99 L-0.00,149.99 Z"
+                style="stroke: none; fill: #72afd3;"></path>
+        </svg></div>
+    </section>
+
+    <!--Footer y formulario de contacto para más información -->
+
+    <footer id="contacto">
+        <div class="contenedor">
+            <h2 class="titulo">Contáctanos</h2>
+            <form action="" class="form">
+                <input type="text" name="" id="" placeholder="Nombre">
+                <input type="email" name="" id="" placeholder="Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

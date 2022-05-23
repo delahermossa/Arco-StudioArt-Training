@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Requisito background-image añadiendo el efecto degradado de un recurso online*/
+.header{
+    background-image: linear-gradient(to top, #e7a71e8f 0%, #0c91eaa5 100%),url(./img/principal.webp);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.textos-header{
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos-header h1{
+    font-size: 60px;
+}
+
+.textos-header h2{
+    font-size: 30px;
+}
+
+.textos-header p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.textos-header a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background:#e7a71e8f;
+    border-radius: 8px;
+    color:white;
+
+}
+
+.svg-header{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*Estilos generales*/
+
+.contenedor,
+.ola-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin:auto;
+    padding: 0 0 80px 0;
+}
+
+.contenedor{
+    padding: 80px 0;
+
+
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.titulo.left{
+    text-align: left;
+}
+
+.titulo.right{
+    text-align: right;
+}
+
+/*Section*/
+
+.website{
+    display: flex;
+    justify-content: space-between;
+}
+
+.website img{
+    width: 48%;
+}
+
+.website.contenedor-textos-main{
+    width: 40%;
+
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+
+}
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%); 
+    padding:12px 15px;
+    color: white;
+    border-radius: 8px;
+
+}
+
+/*info*/
+
+.info{
+    background: #72afd3;
+    color: white;
+}
+
+/*tarjetas*/
+
+.contenedor-tarjetas{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform:scale(1) ;
+    transition: transform 0.6s ; /* Transicion*/
+}
+
+.tarjeta:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.tarjeta img{
+    margin: 30px 0 20px 0;
+    font-size: 50px;
+}
+
+.tarjeta p{
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*Galería*/
+
+.galeria{
+    background: lightgray;
+}
+
+.galeria-contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.galeria-contenedor>img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow:0px 0px 3px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*info 2*/
+.last-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.last-section img{
+    width: 48%;
+}
+
+.last-section .contenedor-textos-main{
+    width: 40%;
+}
+
+/*footer*/
+
+footer{
+    background: #72afd3;
+    color: white;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+input{
+    background: transparent;
+    border: 0;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    padding: 20px 10px;
+}
+
+input::placeholder{
+    color: white;
+    font-family: 'raleway','sans-serif';
+}
+
+input[type="text"],
+input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 0;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    padding: 20px 10px;
+    font-family: 'raleway','sans-serif';
+
+}
+
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}
+/* Pointer*/
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: rgb(234, 191, 60);
+}
+
+/* Pseudoelementos y pseudoclases  */
+
+div:hover p::first-letter{
+    font-weight:bolder;
+}
+div:active p:last-of-type{
+    background-color:aquamarine;
+    color: lightskyblue;
+}
+#parrafos:hover{
+    height: 30vh;
+    column-count:3;
+}
+
+/* Bordes y background*/
+
+.galeria-contenedor img:hover{
+    background-origin: content-box;
+    background-size: 100% 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+
+
+}
+
+/* Ventanas modales*/
+
+
+
+.modal-contenido{
+    position: center;
+    width: 60vw;
+    height: 50vh;
+    padding: 10px 20px;
+    margin: 10% auto;
+    text-align: center;
+    color: bisque;
+
+
+
+}
+
+.modal{
+    transition: all 1s;
+    background-color: rgba(21, 86, 228, 0.843);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+   
+}
+#miModal:target{
+    opacity:1;
+    pointer-events:auto;
+}
+
+#cierrate:target{
+    opacity:0;
+    pointer-events:none;
+
+}
+
+
+
+
