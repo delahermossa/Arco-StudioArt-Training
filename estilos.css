@@ -394,12 +394,13 @@ div:active p:last-of-type{
 
     /*last*/
     .last-section img{
-        width: 98%;
+        width: 50%;
     }
 
     .last-section{
         width: 98%;
         margin-bottom: 20px;
+
     }
 }
 
