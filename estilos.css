@@ -29,6 +29,8 @@ html{
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
+  
+    
 
 }
 
@@ -39,7 +41,16 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-transition: font-size 1s ease;/*Requisito 13*/
+    transition: font-size 1s ease;
+
+    
+    
 }
+
+.textos-header:hover{ /*Requisito 13*/
+    font-size: 28px;
+  }
 
 .textos-header h1{
     font-size: 60px;
@@ -64,6 +75,7 @@ html{
 
 }
 
+
 .svg-header{
     position: absolute;
     bottom: 0;
@@ -80,10 +92,18 @@ html{
     overflow: hidden;
     margin:auto;
     padding: 0 0 80px 0;
+    
+
+
+    
 }
+
+
+
 
 .contenedor{
     padding: 80px 0;
+   
 
 
 }
@@ -208,9 +228,15 @@ html{
     overflow: hidden;
     padding-top:80px;
     padding-bottom:80px;
+    animation: mymove 3s;/*Requisito 14*/
     
    
 }
+
+@keyframes mymove { /*Requisito 14*/
+    0%   {top: 0px; background:rgba(255, 183, 0, 0.883) ; width: 100px;}
+    100% {top: 1000px; background: #72afd3; width: 1250px;}
+  }
 
 /*info 2*/
 .last-section{
@@ -341,7 +367,7 @@ div:active p:last-of-type{
 
 .modal{
     transition: all 1s;
-    background-color: rgba(21, 86, 228, 0.843);
+    background-color: rgba(68, 171, 239, 0.958);
     position:fixed;
     top:0;
     right:0;
