@@ -228,7 +228,7 @@ html{
     overflow: hidden;
     padding-top:80px;
     padding-bottom:80px;
-    animation: mymove 3s;/*Requisito 14*/
+    animation: mymove 3s infinite;/*Requisito 14*/
     
    
 }
