@@ -29,10 +29,30 @@ html{
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
-  
-    
 
 }
+
+.textos-header img{
+    width: 10%;
+}
+
+
+
+.logorotate{
+
+    transition: 1.5s ease;
+     -moz-transition: 1.5s ease; /* Firefox */
+     -webkit-transition: 1.5s ease; /* Chrome - Safari */
+     -o-transition: 1.5s ease; /* Opera */
+}
+
+.logorotate:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;  
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
 
 .textos-header{
     height: 500px;
@@ -249,8 +269,45 @@ html{
   
 }
 .last-section img{
+    margin: 60px 0;
     width: 48%;
+    max-width: fit-content;
+
+    
 }
+/*Imagen efecto cine Requisito 16*/
+
+.zoom{
+    transition: 1.5s ease;
+     -moz-transition: 1.5s ease; /* Firefox */
+     -webkit-transition: 1.5s ease; /* Chrome - Safari */
+     -o-transition: 1.5s ease; /* Opera */
+    
+
+
+     
+}
+.zoom:hover{
+
+
+    transform : scale(1.5);
+    -moz-transform : scale(1.5); /* Firefox */
+    -webkit-transform : scale(1.5); /* Chrome - Safari */
+    -o-transform : scale(1.5); /* Opera */
+    -ms-transform : scale(1.5); /* IE9 */
+
+
+    /*Efecto rotación*/
+    /*border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);*/
+
+   
+}
+
 
 .last-section .contenedor-textos-main{
     width: 40%;
@@ -448,6 +505,8 @@ div:active p:last-of-type{
     /*last*/
     .last-section img{
         width:98%;
+  
+        
     }
 
     .last-section{
